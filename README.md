@@ -4,14 +4,17 @@
 
   # 프로그래머스
   
- NumberPlus_68644.java 
- --> https://programmers.co.kr/learn/courses/30/lessons/68644
+ 두 개 뽑아서 더하기
+ --> https://github.com/asdf120/AlgorithmStudy/blob/main/src/programmers/NumberPlus_68644.java
  
- Number_42862.java
- --> https://programmers.co.kr/learn/courses/30/lessons/42862#
+ 탐욕법(Greedy) > 체육복
+ --> https://github.com/asdf120/AlgorithmStudy/blob/main/src/programmers/Number_42862.java
  
- IdRecommend.java
- --> https://programmers.co.kr/learn/courses/30/lessons/72410
+ 2021 KAKAO BLIND RECRUITMENT > 신규 아이디 추천
+ --> https://github.com/asdf120/AlgorithmStudy/blob/main/src/kakao/IdRecommend.java
 
- NumberString.java
- --> https://programmers.co.kr/learn/courses/30/lessons/81301
+ 2021 카카오 채용연계형 인턴십 > 숫자 문자열과 영단어
+ --> https://github.com/asdf120/AlgorithmStudy/blob/main/src/kakao/NumberString.java
+
+ 완전탐색 > 경우의 수 > 가장 큰 두수의 합
+ --> https://github.com/asdf120/AlgorithmStudy/blob/main/src/search/NumberCase.java
