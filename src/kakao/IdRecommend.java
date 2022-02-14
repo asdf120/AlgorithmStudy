@@ -2,6 +2,7 @@ package kakao;
 
 // 2021 KAKAO BLIND RECRUITMENT
 // 신규 아이디 추천
+// https://www.youtube.com/watch?v=QgiUy-N_j3s&list=PL6YHvWRMtz7DhuPHdUZ0WLB5fNO729mbm&index=1
 public class IdRecommend {
 
     public static void main(String[] args) {
