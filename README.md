@@ -13,5 +13,5 @@
  IdRecommend.java
  --> https://programmers.co.kr/learn/courses/30/lessons/72410
 
- NumberString
+ NumberString.java
  --> https://programmers.co.kr/learn/courses/30/lessons/81301
