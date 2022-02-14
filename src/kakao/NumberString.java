@@ -23,7 +23,7 @@ public class NumberString {
                 stringBuilder.append(s.charAt(i++));
             } else {
                 for (int j = 0; j < word.length; ++j) {
-                    if (s.startsWith(word[j], i)) {
+                    if (s.startsWith(word[j], i)) { // * startsWith("시작되는 문자열", 시작인덱스)
                         stringBuilder.append((char) ('0' + j));
                         i += word[j].length();
                         break;
