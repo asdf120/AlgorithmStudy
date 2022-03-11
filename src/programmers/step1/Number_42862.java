@@ -1,4 +1,4 @@
-package programmers;
+package programmers.step1;
 
 //https://programmers.co.kr/learn/courses/30/lessons/42862#
 // 탐욕법(Greedy) 체육복

@@ -1,4 +1,4 @@
-package programmers;
+package programmers.step1;
 
 // https://programmers.co.kr/learn/courses/30/lessons/86491
 // 위클리 챌린지 > 최소직사각형

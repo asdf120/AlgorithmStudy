@@ -1,4 +1,4 @@
-package programmers;
+package programmers.step1;
 
 import java.util.*;
 

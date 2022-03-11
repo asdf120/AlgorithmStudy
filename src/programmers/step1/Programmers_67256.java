@@ -1,4 +1,4 @@
-package programmers;
+package programmers.step1;
 
 // https://programmers.co.kr/learn/courses/30/lessons/67256
 // 2020 카카오 인턴십 > 키패드 누르기

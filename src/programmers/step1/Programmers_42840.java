@@ -1,4 +1,4 @@
-package programmers;
+package programmers.step1;
 
 // https://programmers.co.kr/learn/courses/30/lessons/42840
 // 완전탐색 > 모의고사

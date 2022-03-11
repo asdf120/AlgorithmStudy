@@ -1,4 +1,4 @@
-package programmers;
+package programmers.step1;
 
 // https://programmers.co.kr/learn/courses/30/lessons/12921
 // 연습문제 > 소수찾기

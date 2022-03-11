@@ -1,4 +1,4 @@
-package programmers;
+package programmers.step1;
 
 // https://programmers.co.kr/learn/courses/30/lessons/12922
 // 연습문제 > 수박수박수박수박수박수?

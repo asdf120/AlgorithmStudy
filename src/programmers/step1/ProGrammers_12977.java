@@ -1,4 +1,4 @@
-package programmers;
+package programmers.step1;
 
 // https://programmers.co.kr/learn/courses/30/lessons/12977?language=java
 // Summer/Winter Coding(~2018) > 소수만들기
