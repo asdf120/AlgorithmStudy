@@ -1,4 +1,4 @@
-package study;
+package study.구현;
 
 /**
  * 이것이 코딩테스트다 p.113
