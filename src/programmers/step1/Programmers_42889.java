@@ -73,6 +73,62 @@ public class Programmers_42889 {
         return answer;
     }
 
+    static int[] solution2(int N, int[] stages) {
+        int[] answer = new int[N];
+
+        Map<Integer, Integer> map = new HashMap<>();
+        Map<Integer, Double> failMap = new HashMap<>();
+        for (int i = 1; i <= N; i++) {
+            map.put(i, 0);
+            failMap.put(i, 0.0);
+        }
+
+        // 스테이지별 실패 카운트를 맵에 담음
+        for (int stage : stages) {
+            if (stage == N + 1) {
+                continue;
+            }
+            int count = map.getOrDefault(stage, 0)+1;
+            map.put(stage, count);
+        }
+
+        // 스테이지별 남은 도전자 수
+        int size = stages.length;
+
+        // 단계별 실패율을 맵에 담음
+        for (Integer stage : map.keySet()) {
+            double failCount = map.get(stage);
+            if (failCount == 0) {
+                failMap.put(stage, 0.0);
+                continue;
+            }
+            failMap.put(stage, failCount / size);
+            size = size - (int) failCount;
+        }
+
+        // 실패율 리스트를 생성후 리스트에 실패율을 담은 후 내림차순
+        List<Double> failList = new ArrayList<>();
+        for (Double d : failMap.values()) {
+            failList.add(d);
+        }
+        Collections.sort(failList, Collections.reverseOrder());
+
+        // 단계별 실패율을 담은 맵의 값과 실패율 리스트를 비교하여 asnwer에 넣음
+        for (int i = 0; i < failList.size(); i++) {
+            int stage = 0;
+            for (int n : failMap.keySet()) {
+                if (failMap.get(n) == failList.get(i)) {
+                    answer[i] = n;
+                    stage = n;
+                    break;
+                }
+            }
+            failMap.remove(stage);
+        }
+
+        return answer;
+    }
+
 
     // https://sujin-k.tistory.com/61 참고
     static int[] otherSolution(int N, int[] stages) {
