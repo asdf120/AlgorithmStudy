@@ -16,12 +16,12 @@ public class Programmers_43165 {
     static int answer = 0;
 
     public int solution(int[] numbers, int target) {
-        bfs(numbers, -numbers[0], target, 0);
-        bfs(numbers, numbers[0], target, 0);
+        dfs(numbers, -numbers[0], target, 0);
+        dfs(numbers, numbers[0], target, 0);
         return answer;
     }
 
-    public void bfs(int[] numbers, int number, int target, int length) {
+    public void dfs(int[] numbers, int number, int target, int length) {
         if (length == numbers.length - 1 && number == target) {
             answer++;
             return;
@@ -29,7 +29,7 @@ public class Programmers_43165 {
         if (length == numbers.length - 1) {
             return;
         }
-        bfs(numbers, number + numbers[length + 1], target, length + 1);
-        bfs(numbers, number - numbers[length + 1], target, length + 1);
+        dfs(numbers, number + numbers[length + 1], target, length + 1);
+        dfs(numbers, number - numbers[length + 1], target, length + 1);
     }
 }
