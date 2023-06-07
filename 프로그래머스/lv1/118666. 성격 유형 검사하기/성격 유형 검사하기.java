@@ -30,12 +30,10 @@ class Solution {
             String first = type[0];
             String second = type[1];
 
-            if(scoreMap.getOrDefault(first,0) > scoreMap.getOrDefault(second, 0)){
+            if(scoreMap.getOrDefault(first,0) >= scoreMap.getOrDefault(second, 0)){
                 sb.append(first);
             }else if(scoreMap.getOrDefault(first,0) < scoreMap.getOrDefault(second, 0)){
                 sb.append(second);
-            }else if(scoreMap.getOrDefault(first,0) == scoreMap.getOrDefault(second, 0)){
-                sb.append(first);
             }
         }
 
