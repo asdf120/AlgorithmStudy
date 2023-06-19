@@ -23,7 +23,7 @@ class Solution {
 
         int count =0;
         while(true){
-            if(firstQueue.size() == 0 || secondQueue.size() == 0 || count > (queue1.length*4) ){
+            if(firstQueue.size() == 0 || secondQueue.size() == 0 || count > ((queue1.length+queue2.length)*2) ){
                 return -1;
             }
 
