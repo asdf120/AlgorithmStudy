@@ -1,31 +1,25 @@
 class Solution {
     public String solution(String s, String skip, int index) {
-        String answer = "";
-        String alphabet = "abcdefghijklmnopqrstuvwxyz";
-        for(String skipAlphabet : skip.split("")){
-            if(alphabet.contains(skipAlphabet)){
-                alphabet = alphabet.replace(skipAlphabet, "");
+        StringBuilder answer = new StringBuilder();
+
+        for(char spell: s.toCharArray()){
+            char temp = spell;
+            int idx = 0;
+
+            while(idx < index){
+                if(temp == 'z'){
+                    temp = 'a';
+                }else{
+                    temp = (char) (temp+1);
+                }
+                if(!skip.contains(String.valueOf(temp))){
+                    idx++;
+                }
             }
+            answer.append(temp);
+
         }
-        
-        int alphabetLength = alphabet.length();
-        int sLength = s.length();
-        String[] sArray = s.split("");
-        
-        for(int i = 0; i<sArray.length; i++){
-            String sSpell = sArray[i];
-            int sPellIndex = alphabet.indexOf(sSpell);
-            if(sPellIndex+index > alphabetLength-1){
-                int answerIndex = (index - (alphabetLength-1 - sPellIndex)-1) % alphabetLength;
-                
-                answer += alphabet.split("")[answerIndex];
-                continue;
-            }
-            answer += alphabet.split("")[sPellIndex+index];
-            
-        }
-        
-        
-        return answer;
+
+        return answer.toString();
     }
 }
