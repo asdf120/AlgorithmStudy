@@ -7,12 +7,8 @@ class Solution {
         
         for(int i = 0; i<s.length(); i++){
             String spell = s.split("")[i];
-            answer[i] = map.getOrDefault(spell, -1);
-            if(answer[i] != -1){
-                answer[i] = i - map.get(spell);
-            }
+            answer[i] = i-map.getOrDefault(spell, i+1);
             map.put(spell, i);
-            
         }
         
         return answer;
